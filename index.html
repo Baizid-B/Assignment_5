@@ -109,7 +109,7 @@
             <a id="noakhali-donate-balance"  class="text-base text-[#545454]">10540 BDT</a>
           </div>
 
-          <h1 class="text-2xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
+          <h1 id="haddingName1" class="text-2xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h1>
 
           <p class="text-left font-light mb-6"> The recent floods in Noakhali have caused significant
             damage to homes  infrastructure. Your donation will help provide essential supplies
@@ -141,9 +141,12 @@
      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8  border-2 rounded-3xl items-center mb-16">
         <div><img class="w-full border-2 border-dashed rounded-3xl" src="./assets/feni.png" alt=""></div>
         <div class="">
-          <span id="feni-donate-balance" class="bg-[#f3f3f3] btn items-center text-[#545454] mb-4"><img src="./assets/coin.png" alt="coin">54253 BDT</span>
+          <span id="feni-donate-balance" class="bg-[#f3f3f3] btn items-center text-[#545454] mb-4">
+            <img src="./assets/coin.png" alt="coin">
+            54253 BDT
+          </span>
 
-          <h1 class="text-2xl font-bold mb-4">Donate for Flood Relief in Feni,Bangladesh</h1>
+          <h1 id="haddingName2" class="text-2xl font-bold mb-4">Donate for Flood Relief in Feni,Bangladesh</h1>
 
           <p class="text-left font-light mb-6"> The recent floods in Noakhali have caused significant
             damage to homes  infrastructure. Your donation will help provide essential supplies
@@ -152,24 +155,9 @@
               impact on the lives of those in need.
           </p>
 
-          <input type="text" name="Donation" id="Donation" class="block w-full text-base rounded-xl border-0 p-5 text-gray-900 ring-1 ring-inset ring-gray-300" placeholder="Write Donation Amount">
+          <input type="text" id="inputField2" name="Donation"  class="block w-full text-base rounded-xl border-0 p-5 text-gray-900 ring-1 ring-inset ring-gray-300" placeholder="Write Donation Amount">
 
-          <!-- <p onclick="" class="w-full text-xl text-center font-semibold rounded-xl bg-[#b4f461] py-5 px-8 mt-8 cursor-pointer">Donate Now</p> -->
-            <!-- Open the modal using ID.showModal() method -->
-          <button id="noakhali-donate-btn" class="w-full text-xl text-center font-semibold rounded-xl bg-[#b4f461] py-5 px-8 mt-8 cursor-pointer" onclick="my_modal_1.showModal()">Donate Now</button>
-          <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-
+          <p id="Feni-donate-btn" class="w-full text-xl text-center font-semibold rounded-xl bg-[#b4f461] py-5 px-8 mt-8 cursor-pointer">Donate Now</p>
         </div>
      </div>
     <!-- card-2 -->
@@ -180,7 +168,7 @@
         <div class="">
           <span id="quota-donate-balance" class="bg-[#f3f3f3] btn items-center text-[#545454] mb-4"><img src="./assets/coin.png" alt="coin">98532 BDT</span>
 
-          <h1 class="text-2xl font-bold mb-4">Aid for Injured in the Quota Movement</h1>
+          <h1 id="haddingName3" class="text-2xl font-bold mb-4">Aid for Injured in the Quota Movement</h1>
 
           <p class="text-left font-light mb-6"> The recent floods in Noakhali have caused significant
             damage to homes  infrastructure. Your donation will help provide essential supplies
@@ -189,9 +177,9 @@
               impact on the lives of those in need.
           </p>
 
-          <input type="text" name="Donation" id="donation" class="block w-full text-base rounded-xl border-0 p-5 text-gray-900 ring-1 ring-inset ring-gray-300" placeholder="Write Donation Amount">
+          <input type="text" name="Donation" id="inputField3" class="block w-full text-base rounded-xl border-0 p-5 text-gray-900 ring-1 ring-inset ring-gray-300" placeholder="Write Donation Amount">
 
-          <p class="w-full text-xl text-center font-semibold rounded-xl bg-[#b4f461] py-5 px-8 mt-8 cursor-pointer">Donate Now</p>
+          <p id="quota-donate-btn" class="w-full text-xl text-center font-semibold rounded-xl bg-[#b4f461] py-5 px-8 mt-8 cursor-pointer">Donate Now</p>
         </div>
      </div>
     <!-- card-3 -->
@@ -200,11 +188,13 @@
 
     <!-- history -->
      <div id="history" class="hidden">
-      <h1 class="text-center uppercase text-4xl">history list</h1>
+      <h1 class="text-center uppercase text-4xl mb-6">history list</h1>
+
+      <div id="history-container" class="text-lg mx-auto text-center">
+      </div>
+
      </div>
     <!-- history -->
-
-
     </main>
     <!-- main section -->
 
@@ -217,6 +207,8 @@
       <script src="./js/index.js"></script>
       <script src="./js/modal.js"></script>
       <script src="./js/show.js"></script>
+      <script src="./js/index2.js"></script>
+      <script src="./js/index3.js"></script>
       <!-- <script>
         // Get modal element
         const modal = document.getElementById("my_modal_5");

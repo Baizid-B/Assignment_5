@@ -1,4 +1,4 @@
-function getModal() {
+function getModal(){
 
 const modal = document.getElementById("myModal");
 const openBtn = document.getElementById("noakhali-donate-btn");
