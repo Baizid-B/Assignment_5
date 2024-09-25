@@ -8,13 +8,15 @@ document.getElementById('noakhali-donate-btn').addEventListener("click", functio
     const numberValue = parseFloat(input_Field);
 
 
-    if (!isNaN(numberValue) && numberValue > 0 && myBalance >= 10) {
+    if (!isNaN(numberValue) && numberValue >= 1 && myBalance >= 0 && input_Field <= myBalance) {
         const totalAmount = myBalance - numberValue + 'BDT';
         document.getElementById('balance').innerText = totalAmount;
         const total = noakhaliDonateBalance + numberValue + 'BDT';
         document.getElementById('noakhali-donate-balance').innerText = total;
+
+        getModal();
         
-    } else {
+    }else {
         alert("Invalid input or insufficient balance");
     }
 });
